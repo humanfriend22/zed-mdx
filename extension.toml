@@ -1,15 +1,15 @@
 id = "mdx"
 name = "MDX"
 description = "MDX support"
-version = "0.4.0"
+version = "0.5.0"
 schema_version = 1
-authors = ["Suhail Razzak <suhail.razzak@gmail.com>"]
-repository = "https://github.com/srazzak/zed-mdx"
+authors = ["humanfriend22"]
+repository = "https://github.com/humanfriend22/zed-mdx"
 
 [language_servers.mdx-analyzer]
 name = "MDX Analyzer"
 language = "MDX"
 
 [grammars.mdx]
-repository = "https://github.com/srazzak/tree-sitter-mdx"
+repository = "https://github.com/humanfriend22/tree-sitter-mdx"
 rev = "0f2d4b204b231e5ebb7b94ff0259bee6c83ebc58"

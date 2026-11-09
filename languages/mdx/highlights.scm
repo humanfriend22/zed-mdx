@@ -232,6 +232,14 @@
 (jsx_closing_element (identifier) @tag.jsx (#match? @tag.jsx "^[a-z][^.]*$"))
 (jsx_self_closing_element (identifier) @tag.jsx (#match? @tag.jsx "^[a-z][^.]*$"))
 
+; Components (<Layout>, <Foo.Bar>)
+(jsx_opening_element (identifier) @type (#match? @type "^[A-Z]"))
+(jsx_closing_element (identifier) @type (#match? @type "^[A-Z]"))
+(jsx_self_closing_element (identifier) @type (#match? @type "^[A-Z]"))
+(jsx_opening_element (member_expression (identifier) @type))
+(jsx_closing_element (member_expression (identifier) @type))
+(jsx_self_closing_element (member_expression (identifier) @type))
+
 (jsx_attribute (property_identifier) @attribute.jsx)
 (jsx_opening_element (["<" ">"]) @punctuation.bracket.jsx)
 (jsx_closing_element (["</" ">"]) @punctuation.bracket.jsx)

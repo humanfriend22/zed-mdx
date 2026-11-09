@@ -3,6 +3,7 @@
 #
 
 *.wasm
+.DS_Store
 
 #
 # Rust

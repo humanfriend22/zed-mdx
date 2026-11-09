@@ -17,6 +17,11 @@
 ((markdown_inline) @injection.content
  (#set! injection.language "markdown-inline"))
 
+; Text inside a JSX wrapper (e.g. <Layout>...</Layout>) is parsed as `jsx_text`,
+; not as markdown blocks, so hand it to the markdown language.
+((jsx_text) @injection.content
+ (#set! injection.language "markdown"))
+
 ; JavaScript
 ; ==========
 
